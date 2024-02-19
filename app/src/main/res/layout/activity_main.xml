@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Информация о погоде"
+        android:textColor="#0E0B0B"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:queryHint="Введите название города"
+        android:iconifiedByDefault="false"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#0E0B0B"
+        android:textSize="16sp"
+        android:elevation="2dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:outlineSpotShadowColor="#000000"/>
+
+    <Button
+        android:id="@+id/btEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:text="Узнать погоду"
+        android:textColor="#0E0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btEnter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:color="@color/white"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:padding="20dp"
+        android:text="Темпаратура: -°C\nВлажность: -%\nДавление: - hPa\nСкорость ветра: - m/s\nНаправление ветра: -°\nОблачность: -%"        android:textAlignment="center"
+        android:textColor="#0E0909"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Выход"
+        android:textColor="#0E0B0B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
